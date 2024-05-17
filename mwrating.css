@@ -1,0 +1,221 @@
+h1 {
+    font-family: 'Anton', Impact, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 0 #000;
+
+
+}
+
+.search {
+    text-align: right;
+    margin-right: 50px;
+    margin-left: 690px;
+
+    font-family: Verdana;
+    font-weight: 600;
+    color: #7678ed;
+    text-shadow: 1px 1px 0 black;
+
+
+}
+
+.background {
+    background-image: url('../Images/mwbackground.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    height: 100vh;
+
+    margin: 0;
+
+    overflow: hidden;
+
+
+
+}
+
+input[type="text"] {
+    background-color: #90e0ef;
+
+    color: #000;
+
+    border: 1px solid #03045e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body {
+    margin: 0;
+}
+
+a p {
+    /* margin: 0px 10px 0px 50px;
+    padding-left: 10px;
+    padding-right: 10px; */
+    color: whitesmoke;
+    text-shadow: 2px 2px 0 #000;
+    text-transform: uppercase;
+    font-family: 'Inter var', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+
+    align-items: center;
+
+    /*display: inline-block;
+
+    word-wrap: break-word; */
+
+
+
+
+}
+
+.ships {
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 244px));
+    gap: 10px;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+
+#Pan_Spatial_Teton,
+#Pyotr {
+    width: 220px;
+    height: auto;
+    margin: 20px 5px 0px 5px;
+    border: 5px solid #9381ff;
+    
+    box-sizing: border-box;
+
+    transition: all 1s;
+}
+
+#Hauqing,
+#Arkansas {
+    width: 220px;
+    height: auto;
+    margin: 20px 5px 0px 5px;
+
+    border: 5px solid #a7c957;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+#Yamato,
+#Bismark,
+#Admiral_Graf_Spee{
+    width: 220px;
+    height: auto;
+    margin: 20px 5px 0px 5px;
+    border: 5px solid #ffd60a;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+#Battlecruiser{
+    width: 220px;
+    height: auto;
+    margin: 20px 5px 0px 5px;
+    border: 5px solid #f35b04;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+
+#five {
+    
+    text-shadow: 1px 1px 0 #000;
+    color: #9381ff;
+    ;
+}
+
+#four {
+    text-shadow: 1px 1px 0 #000;
+    color: #a7c957;
+}
+
+#three {
+    text-shadow: 1px 1px 0 #000;
+    color: #ffd60a;
+}
+
+#two{
+    text-shadow: 1px 1px 0 #000;
+    color: #f35b04;
+}
+
+#one{
+    text-shadow: 1px 1px 0 #000;
+    color: #bf0603;
+}
+
+
+#Pan_Spatial_Teton:hover,
+#Yamato:hover,
+#Hauqing:hover,
+#Bismark:hover,
+#Admiral_Graf_Spee:hover,
+#Arkansas:hover,
+#Pyotr:hover,
+#Battlecruiser:hover {
+   
+    width: 220px;
+    height: auto;
+    
+    border:none;
+    
+    
+    
+}
+
+p {
+    color: whitesmoke;
+    text-shadow: 2px 2px 0 #000;
+    text-transform: uppercase;
+    font-family: 'Inter var', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+
+    align-items: center;
+    margin-bottom: 0px;
+
+}
+
+.ship {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+hr {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+#spee{
+    text-shadow: 1px 1px 0 #000;
+    color: #ffd60a;
+    margin-top: 0px;
+}
+#battle{
+    text-shadow: 1px 1px 0 #000;
+    color: #f35b04;
+    margin-top: 0px;
+}
+
+#name{
+    margin-top: 10px;
+    
+}
+
