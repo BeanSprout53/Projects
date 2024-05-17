@@ -34,8 +34,8 @@ h1 {
     height: 100vh;
 
     margin: 0;
-
-    overflow: hidden;
+    
+    overflow: auto;
 
 
 
@@ -53,6 +53,7 @@ input[type="text"] {
 
 body {
     margin: 0;
+    
 }
 
 a p {
@@ -65,9 +66,7 @@ a p {
     font-family: 'Inter var', sans-serif;
     font-size: large;
     font-weight: 700;
-    text-align: center;
-
-    align-items: center;
+    
 
     /*display: inline-block;
 
@@ -78,104 +77,146 @@ a p {
 
 }
 
-.ships {
-
-    display: grid;
-    grid-template-columns: repeat(4, minmax(50px, 244px));
-    gap: 10px;
-    grid-auto-rows: minmax(50px, auto);
-}
-
-
-#Pan_Spatial_Teton,
-#Pyotr {
-    width: 220px;
-    height: auto;
-    margin: 20px 5px 0px 5px;
-    border: 5px solid #9381ff;
+.battleship, .crusier {
+    width: 300px;
+    height: auto;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     
-    box-sizing: border-box;
 
-    transition: all 1s;
 }
 
-#Hauqing,
-#Arkansas {
-    width: 220px;
-    height: auto;
-    margin: 20px 5px 0px 5px;
+.row1, .row2{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+    
 
-    border: 5px solid #a7c957;
-    box-sizing: border-box;
-    transition: all 1s;
 }
 
-#Yamato,
-#Bismark,
-#Admiral_Graf_Spee{
-    width: 220px;
-    height: auto;
-    margin: 20px 5px 0px 5px;
-    border: 5px solid #ffd60a;
-    box-sizing: border-box;
-    transition: all 1s;
-}
-
-#Battlecruiser{
-    width: 220px;
-    height: auto;
-    margin: 20px 5px 0px 5px;
-    border: 5px solid #f35b04;
-    box-sizing: border-box;
-    transition: all 1s;
-}
-
+/* --------------------------------------------------- */
 
 #five {
+    width: 220px;
+    height: auto;
+    margin: 20px 5px 0px 5px;
     
-    text-shadow: 1px 1px 0 #000;
-    color: #9381ff;
-    ;
+
+
+    box-shadow: 0px 0px 10px 5px #9381ff;
+
+    box-sizing: border-box;
+
+    transition: all 0.25s;
+
 }
 
+.battleship a img#five:hover, .crusier a img#five:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px 10px #9381ff;
+
+}
+
+.battleship p#five, .crusier p#five {
+    box-shadow: none;
+    text-shadow: 1px -1px 3px black;
+    color: #9381ff;
+}
+
+/* --------------------------------------------------- */
+
+
 #four {
-    text-shadow: 1px 1px 0 #000;
+    width: 220px;
+    height: auto;
+    margin: 20px 5px 0px 5px;
+
+    box-shadow: 0px 0px 10px 5px #a7c957;
+    box-sizing: border-box;
+    transition: all 0.25s;
+}
+
+.battleship a img#four:hover, .crusier a img#four:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px 10px #a7c957;
+}
+
+.battleship p#four, .crusier p#four {
+    box-shadow: none;
+    text-shadow: 1px -1px 3px black;
     color: #a7c957;
 }
 
+/* --------------------------------------------------- */
+
 #three {
-    text-shadow: 1px 1px 0 #000;
+    width: 220px;
+    height: auto;
+    margin: 20px 5px 0px 5px;
+    box-shadow: 0px 0px 10px 5px #ffd60a;
+    box-sizing: border-box;
+    transition: all 0.25s;
+}
+
+.battleship a img#three:hover, .crusier a img#three:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px 10px #ffd60a;
+}
+
+.battleship p#three, .crusier p#three {
+    box-shadow: none;
+    text-shadow: 1px -1px 3px black;
     color: #ffd60a;
 }
 
-#two{
-    text-shadow: 1px 1px 0 #000;
+/* --------------------------------------------------- */
+
+#two {
+    width: 220px;
+    height: auto;
+    margin: 20px 5px 0px 5px;
+    box-shadow: 0px 0px 10px 5px #f35b04;
+    box-sizing: border-box;
+    transition: all 0.25s;
+}
+
+.battleship a img#two:hover, .crusier a img#two:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px 10px #f35b04;
+}
+
+.battleship p#two, .crusier p#two {
+    box-shadow: none;
+    text-shadow: 1px -1px 3px black;
     color: #f35b04;
 }
 
-#one{
-    text-shadow: 1px 1px 0 #000;
+/* --------------------------------------------------- */
+
+#one {
+    width: 220px;
+    height: auto;
+    margin: 20px 5px 0px 5px;
+    box-shadow: 0px 0px 10px 5px #bf0603;
+    box-sizing: border-box;
+    transition: all 0.25s;
+}
+
+.ship a img#one:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px 10px #bf0603;
+}
+
+.ship p#one {
+    box-shadow: none;
+    text-shadow: 1px -1px 3px black;
     color: #bf0603;
 }
 
-
-#Pan_Spatial_Teton:hover,
-#Yamato:hover,
-#Hauqing:hover,
-#Bismark:hover,
-#Admiral_Graf_Spee:hover,
-#Arkansas:hover,
-#Pyotr:hover,
-#Battlecruiser:hover {
-   
-    width: 220px;
-    height: auto;
-    
-    border:none;
-    
-    
-    
-}
+/* --------------------------------------------------- */
 
 p {
     color: whitesmoke;
@@ -203,19 +244,9 @@ hr {
     margin-top: 10px;
 }
 
-#spee{
-    text-shadow: 1px 1px 0 #000;
-    color: #ffd60a;
-    margin-top: 0px;
-}
-#battle{
-    text-shadow: 1px 1px 0 #000;
-    color: #f35b04;
-    margin-top: 0px;
-}
 
-#name{
+
+#name {
     margin-top: 10px;
-    
-}
 
+}
