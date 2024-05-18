@@ -34,7 +34,7 @@ h1 {
     height: 100vh;
 
     margin: 0;
-    
+
     overflow: auto;
 
 
@@ -53,47 +53,44 @@ input[type="text"] {
 
 body {
     margin: 0;
-    
+
 }
 
 a p {
-    /* margin: 0px 10px 0px 50px;
-    padding-left: 10px;
-    padding-right: 10px; */
     color: whitesmoke;
     text-shadow: 2px 2px 0 #000;
     text-transform: uppercase;
     font-family: 'Inter var', sans-serif;
     font-size: large;
     font-weight: 700;
-    
-
-    /*display: inline-block;
-
-    word-wrap: break-word; */
-
-
-
 
 }
 
-.battleship, .crusier {
-    width: 300px;
-    height: auto;   
+
+.battleship,
+.crusier {
+    flex-basis: 25%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+
 
 }
 
-.row1, .row2{
+.row1,
+.row2 {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    
-    
+
+
+
+
+
+
+
 
 }
 
@@ -103,7 +100,7 @@ a p {
     width: 220px;
     height: auto;
     margin: 20px 5px 0px 5px;
-    
+
 
 
     box-shadow: 0px 0px 10px 5px #9381ff;
@@ -114,13 +111,15 @@ a p {
 
 }
 
-.battleship a img#five:hover, .crusier a img#five:hover {
+.battleship a img#five:hover,
+.crusier a img#five:hover {
     transform: scale(1.03);
     box-shadow: 0px 0px 10px 10px #9381ff;
 
 }
 
-.battleship p#five, .crusier p#five {
+.battleship p#five,
+.crusier p#five {
     box-shadow: none;
     text-shadow: 1px -1px 3px black;
     color: #9381ff;
@@ -139,14 +138,17 @@ a p {
     transition: all 0.25s;
 }
 
-.battleship a img#four:hover, .crusier a img#four:hover {
+.battleship a img#four:hover,
+.crusier a img#four:hover {
     transform: scale(1.03);
     box-shadow: 0px 0px 10px 10px #a7c957;
 }
 
-.battleship p#four, .crusier p#four {
+.battleship p#four,
+.crusier p#four {
     box-shadow: none;
     text-shadow: 1px -1px 3px black;
+
     color: #a7c957;
 }
 
@@ -161,12 +163,14 @@ a p {
     transition: all 0.25s;
 }
 
-.battleship a img#three:hover, .crusier a img#three:hover {
+.battleship a img#three:hover,
+.crusier a img#three:hover {
     transform: scale(1.03);
     box-shadow: 0px 0px 10px 10px #ffd60a;
 }
 
-.battleship p#three, .crusier p#three {
+.battleship p#three,
+.crusier p#three {
     box-shadow: none;
     text-shadow: 1px -1px 3px black;
     color: #ffd60a;
@@ -183,12 +187,14 @@ a p {
     transition: all 0.25s;
 }
 
-.battleship a img#two:hover, .crusier a img#two:hover {
+.battleship a img#two:hover,
+.crusier a img#two:hover {
     transform: scale(1.03);
     box-shadow: 0px 0px 10px 10px #f35b04;
 }
 
-.battleship p#two, .crusier p#two {
+.battleship p#two,
+.crusier p#two {
     box-shadow: none;
     text-shadow: 1px -1px 3px black;
     color: #f35b04;
